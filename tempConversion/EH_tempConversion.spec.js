@@ -18,4 +18,12 @@ describe('ctof', function() {
   it('converts 10C to 50F', function() {
     expect(tempConversion.ctof(10)).toEqual(50);
   });
+
+  it('converts 0C to 32F', function() {
+    expect(tempConversion.ctof(0)).toEqual(32);
+  });
+
+  it('converts -40C to -40F', function() {
+    expect(tempConversion.ctof(-40)).toEqual(-40);
+  });
 });
