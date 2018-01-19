@@ -12,4 +12,8 @@ describe('Reverse String', function() {
   it('works with multiple words', function() {
     expect(reverseString('I am dog')).toEqual('god ma I');
   });
+
+  it('works with punctuation and capitalization', function() {
+      expect(reverseString('WHY?! HOW!')).toEqual('!WOH !?YHW');
+  })
 })
