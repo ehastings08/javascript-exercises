@@ -13,3 +13,9 @@ describe('ftoc', function() {
     expect(+(tempConversion.ftoc(-10).toFixed(2))).toEqual(-23.33);
   });
 });
+
+describe('ctof', function() {
+  it('converts 10C to 50F', function() {
+    expect(tempConversion.ctof(10)).toEqual(50);
+  });
+});
