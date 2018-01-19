@@ -8,4 +8,8 @@ describe('Reverse String', function() {
   it('returns nothing when an empty string is entered', function() {
     expect(reverseString('')).toEqual('');
   });
+
+  it('works with multiple words', function() {
+    expect(reverseString('I am dog')).toEqual('god ma I');
+  });
 })
