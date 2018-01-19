@@ -17,7 +17,7 @@ describe("Palindromes", function() {
     expect(palindromes('Able was I ere I saw Elba')).toEqual(true);
   });
 
-  xit('returns true for a phrase with punctuation', function() {
+  it('returns true for a phrase with punctuation', function() {
     expect(palindromes('A car, a man, a maraca.')).toEqual(true);
   });
 });
