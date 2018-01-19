@@ -1,3 +1,5 @@
+# Original README
+
 These are a series of javascript exercises intended to be used alongside the curriculum at 'The Odin Project'  They start very simply, but get more involved as you progress through them.
 
 There will eventually be a suggested order of completion, but at this time since we are still in the process of creating more exercises the order is subject to change and has not yet been specified... In general however there are a couple which make a good "starting point" feel free to at least start with these:
@@ -19,3 +21,7 @@ The first exercise, `helloWorld` will walk you through the process in more depth
 ## Solutions
 
 Solutions for these exercises can be found in this repo on the 'solutions' branch.
+
+# Notes
+
+I have modified each directory such that there is an additional spec file prefixed EH_. To better practice writing tests with Jasmine I developed those specs first, then revised their implementation based on the specs laid out in the original files.
