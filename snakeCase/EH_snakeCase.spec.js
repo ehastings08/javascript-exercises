@@ -13,4 +13,8 @@ describe("Snake Case", function() {
   it('works with Caps and punctuation', function() {
     expect(snakeCase('Hello, World???')).toEqual('hello_world');
   });
+
+  it('works with longer phrases', function() {
+    expect(snakeCase('This is the song that never ends....')).toEqual('this_is_the_song_that_never_ends');
+  });
 });
