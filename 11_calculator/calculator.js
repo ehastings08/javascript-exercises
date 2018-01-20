@@ -7,24 +7,23 @@ function subtract (num1, num2) {
 }
 
 function sum (array) {
-	if (array.length == 0) {
-		return 0;
+	return array.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+}
+
+function multiply (array) {
+	return array.reduce((accumulator, currentValue) => accumulator * currentValue, 1);
+}
+
+function power(num1, num2) {
+	return Math.pow(num1, num2);
+}
+
+function factorial(num) {
+	if (num == 0) {
+		return 1;
 	} else {
-		var reducer = (accumulator, currentValue) => accumulator + currentValue;
-		return array.reduce(reducer);
+		return (num * factorial(num-1));
 	}
-}
-
-function multiply () {
-	
-}
-
-function power() {
-	
-}
-
-function factorial() {
-	
 }
 
 module.exports = {
