@@ -9,4 +9,8 @@ describe("Snake Case", function() {
   it("converts a compound camelCase word into snake case", function() {
     expect(snakeCase("snakeCase")).toEqual("snake_case");
   });
+
+  it('works with Caps and punctuation', function() {
+    expect(snakeCase('Hello, World???')).toEqual('hello_world');
+  });
 });
