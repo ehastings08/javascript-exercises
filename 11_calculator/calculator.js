@@ -1,13 +1,18 @@
-function add () {
-	
+function add (num1, num2) {
+	return num1 + num2;
 }
 
-function subtract () {
-	
+function subtract (num1, num2) {
+	return num1 - num2;
 }
 
-function sum () {
-	
+function sum (array) {
+	if (array.length == 0) {
+		return 0;
+	} else {
+		var reducer = (accumulator, currentValue) => accumulator + currentValue;
+		return array.reduce(reducer);
+	}
 }
 
 function multiply () {
